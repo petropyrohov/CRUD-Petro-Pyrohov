@@ -1,21 +1,21 @@
 import React from 'react';
 import ApiService from 'services/api-service';
 import * as Styled from './styled';
-import HouseCard from './house-card';
+import ArtistCard from './artist-card';
 
 const HomePage = () => {
   const [houses, setHouses] = React.useState<HouseModel[]>([]);
 
   React.useEffect(() => {
     (async () => {
-      const fetchedHouses = await ApiService.fetchHouses();
+      const fetchedHouses = await ApiService.fetchart();
       setHouses(fetchedHouses);
     })();
   }, []);
 
   return (
     <Styled.HousesGrid>
-      {houses.map((houseProps) => (<HouseCard key={houseProps.id} {...houseProps} />))}
+      {houses.map((houseProps) => (<ArtistCard key={houseProps.id} {...houseProps} />))}
     </Styled.HousesGrid>
   );
 };

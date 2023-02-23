@@ -8,9 +8,9 @@ import {
 import Img from 'components/ui/img';
 import * as Styled from './styled';
 
-type HouseCardProps = HouseModel;
+type ArtistCardProps = HouseModel;
 
-const HouseCard: React.FC<HouseCardProps> = ({
+const HouseCard: React.FC<ArtistCardProps> = ({
   title,
   location,
   images,
