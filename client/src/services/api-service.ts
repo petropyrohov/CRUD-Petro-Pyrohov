@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5024',
+  baseURL: 'http://localhost:5024/',
   timeout: 5000,
   headers: {
     'Content-Type': 'application/json',
@@ -10,7 +10,7 @@ const api = axios.create({
 });
 
 const fetchart = async () => {
-  const response = await api.get<HouseModel[]>('/artist');
+  const response = await api.get<HouseModel[]>('/artists');
 
   return response.data;
 };

@@ -19,11 +19,11 @@ const HouseCard: React.FC<ArtistCardProps> = ({
 }) => (
   <Stack sx={{ boxShadow: 4 }}>
     <Img src={images[0]} alt="" sx={{ aspectRatio: '1.42', width: 1 }} />
-    <Styled.HouseCardContent>
+    <Styled.ArtCardContent>
       <Box sx={{ flexGrow: 1 }}>
         <Box sx={{ float: 'right', textAlign: 'right' }}>
           <Box sx={{ fontSize: '1.3rem', color: 'primary.main', fontWeight: 600 }}>{price}</Box>
-          <Styled.HouseCardRating>{rating}</Styled.HouseCardRating>
+          <Styled.ArtCardRating>{rating}</Styled.ArtCardRating>
         </Box>
 
         <Typography sx={{ fontSize: '1.15rem', fontWeight: 500 }}>{title}</Typography>
@@ -31,7 +31,7 @@ const HouseCard: React.FC<ArtistCardProps> = ({
       </Box>
 
       <Button color="primary" variant="contained" sx={{ mt: 3 }}>View</Button>
-    </Styled.HouseCardContent>
+    </Styled.ArtCardContent>
   </Stack>
 );
 
