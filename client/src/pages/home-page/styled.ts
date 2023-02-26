@@ -18,13 +18,13 @@ export const HousesGrid = styled('div')(({ theme }) => ({
   },
 }));
 
-export const ArtCardContent = styled(Stack)(({ theme }) => ({
+export const HouseCardContent = styled(Stack)(({ theme }) => ({
   flexGrow: 1,
   width: '100%',
   padding: theme.spacing(1, 2, 2),
 }));
 
-export const ArtCardRating = styled('div')(({ theme }) => ({
+export const HouseCardRating = styled('div')(({ theme }) => ({
   display: 'inline-flex',
   alignItems: 'flex-end',
   fontSize: '1.3rem',
